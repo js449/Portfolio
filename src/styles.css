@@ -1,0 +1,324 @@
+/* Set height and width of the body to 100% */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 100%; /* 100% of the viewport height */
+  width: 100%; /* 100% of the viewport width */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 10s steps(30, end) infinite;
+}
+
+.ribbon {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+  text-align: right;
+}
+.ribbon span {
+  font-size: 8px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 100px;
+  display: block;
+  background: #79a70a;
+  background: linear-gradient(#9bc90d 0%, #79a70a 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 19px;
+  right: -21px;
+}
+.ribbon span::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid #79a70a;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #79a70a;
+}
+.ribbon span::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #79a70a;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #79a70a;
+}
+
+.heading-container {
+  font-family: cursive;
+    margin-bottom: 25px;
+    text-align: center;
+    background: #bbe4e9;
+    box-shadow: inset 0px 3px 15px 4px #5585b5;
+    padding-bottom: 4px;
+}
+
+.about-container {
+  font-family: cursive;
+  font-size: 15px;
+  position: relative;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 7px -7px 20px 3px #5585b5;
+  background: #bbe4e9;
+}
+
+.abt-image {
+  position: relative;
+}
+.abt-image img {
+  position: absolute; 
+  top: 76%; 
+  left: 92%; 
+  transform: translate(-50%, -50%); 
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+}
+
+.hero-container {
+  font-size: 15px;
+  font-family: cursive;
+  position: relative;
+  margin-top: 10px;
+  box-shadow: 7px -7px 20px 3px #5585b5;
+  background: #bbe4e9;
+}
+.education-container {
+  font-family: cursive;
+  font-size: 15px;
+  position: relative;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 7px -7px 20px 3px #5585b5;
+  background: #bbe4e9;
+}
+
+.education-image {
+  position: relative;
+}
+.education-image img {
+  position: absolute;
+  top: 69%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 175px;
+  background-size: cover;
+}
+
+.experience-container {
+  font-family: cursive;
+  font-size: 15px;
+  position: relative;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 7px -7px 20px 3px #5585b5;
+  background: #bbe4e9;
+}
+
+.exp-image {
+  position: relative;
+}
+.exp-image img {
+  position: absolute; 
+  top: 66%; 
+  left: 90%; 
+  transform: translate(-50%, -50%); /* Center the image within its container */
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+}
+
+.project-container {
+  font-family: cursive;
+  font-size: 15px;
+  position: relative;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 7px -7px 20px 3px #5585b5;
+  background: #bbe4e9;
+}
+
+.project-container h5{
+  font-weight: bold;
+}
+
+.contact-container {
+  text-align: center;
+  font-size: 20px;
+  font-family: cursive;
+  position: relative;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 7px -7px 20px 3px #5585b5;
+  background: #bbe4e9;
+}
+
+/* Set up a flex container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; 
+}
+
+.content {
+  flex-grow: 1; 
+  padding: 20px; 
+  background: #79c2d0;  
+}
+
+/* CSS Styles */
+.profile-link {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-link span {
+  margin-bottom: 5px; /* Add spacing between the two lines */
+}
+
+.header {
+  width: 200px;
+}
+
+.link{
+  text-align: center;
+  padding-right: 50px;
+}
+
+/* Navbar Styles */
+.navbar {
+  font-family: cursive;
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space equally between children */
+  align-items: flex-start;
+  background: #53a8b6;  
+}
+
+.nav-links {
+  flex-grow: 1; /* Allow the links to grow and distribute remaining space equally */
+  padding: 20px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links a {
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+  flex-grow: 1;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Hero Styles */
+
+.hero {
+  display: inline;
+  width: 100%;
+  height: 100%;
+  /* background-color: #18ccba; */
+  color: #000000;
+  /* background-image: url("./assets/home.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;  */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  margin-top: 5px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+.profile-image:hover {
+  transform: scale(1.1); /* Enlarge the image when hovering */
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-filter: contrast(90%) sepia(20%);
+  filter: contrast(90%) sepia(20%);
+}
+
+.hero h1 {
+  font-size: 28px; /* Reduce font size for a more compact heading */
+  margin-bottom: 10px; /* Reduce spacing below the heading */
+}
+
+.hero p {
+  font-size: 16px; /* Reduce font size for paragraph text */
+  line-height: 1.5;
+}
+
+
+.footer {
+  font-family: cursive;
+  position: fixed;
+  bottom: 0;
+  left: 200px; /* Width of the navbar, adjust as needed */
+  right: 0; /* Fill the remaining space to the right */
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
